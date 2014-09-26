@@ -13,7 +13,7 @@ return array(
     ......
     'modules'=>array(
         'AppVersions' => array(
-            'class' => 'common.lib.appversions.AppVersionsModule',
+            'class' => 'common.lib.yii-appVersions.AppVersionsModule',
         ),
     ),
 )
@@ -45,7 +45,7 @@ return array(
 			'migrationPath' => 'application.migrations'
 		),
         'relAppVer' => array(
-            'class' => 'common.lib.appVersions.commands.relAppVerCommand'
+            'class' => 'common.lib.yii-appVersions.commands.relAppVerCommand'
         )
 	)
 )
