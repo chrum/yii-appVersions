@@ -20,7 +20,7 @@ Yii::app()->clientScript->registerCssFile($resUrl."/css/appVersions.css");
     <h4>Nothing here, yet...</h4>
 
 <?php else:
-    $langs = Yii::app()->params['langs'];
+    $langs = langHelper::getLangs();
     if (empty($currentVersion) || empty($currentVersion->message)) {
         $messages = array();
         foreach($langs as $code => $name) {
@@ -30,7 +30,7 @@ Yii::app()->clientScript->registerCssFile($resUrl."/css/appVersions.css");
     } else {
         $messages = json_decode($currentVersion->message, true);
     }
-    $currentLang = Yii::app()->params['defaultLang'];
+    $currentLang = langHelper::getCurrentLang();
     ?>
     <h4>Editing versions messages<small>(displayed when new version of the app is available)</small></h4>
     <h5>To add new version please use RelAppVer command</h5>

@@ -1,5 +1,16 @@
 {
     "name": "chrum/yii-appVersions",
     "description": "super simple module for dealing with app versions",
-    "license": ""
+    "license": "",
+    "repositories":[
+        {
+            "type": "vcs",
+            "url": "https://github.com/chrum/yii-translations"
+        }
+    ],
+    "require": {
+        "chrum/yii-translations": "master",
+        "php": ">=5.3.0",
+        "yiisoft/yii": ">=1.1.13"
+    }
 }

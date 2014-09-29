@@ -3,6 +3,10 @@ App version module
 
 some description, to be written...
 
+# Requirements
+
+* chrum/yii-translations - (included in composer.json)
+
 # Installation
 
 Copy the module files to location of your choice

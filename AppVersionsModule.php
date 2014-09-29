@@ -20,6 +20,7 @@ class AppVersionsModule extends CWebModule
             'appversions.controllers.*',
             'appversions.views.*',
             'appversions.models.*',
+            'translations.helpers.*'
         ));
 
     }
