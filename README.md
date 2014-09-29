@@ -23,34 +23,15 @@ return array(
 )
 ~~~
 
-Adding some languages in your config/main.php, params section
-~~~php
-return array(
-    .......
-    'params' => array(
-        "defaultLang" => "dk",
-        "langs" => array(
-            "dk" => "Danish",
-            "se" => "Swedish",
-            "no" => "Norwegian",
-            "fi" => "Finnish"
-        )
-    ),
-)
-~~~
-
 Update/add to config/console.php info about command
 ~~~php
 return array(
     .......
 	'commandMap' => array(
-		'migrate' => array(
-			'class' => 'system.cli.commands.MigrateCommand',
-			'migrationPath' => 'application.migrations'
-		),
-        'relAppVer' => array(
-            'class' => 'common.lib.yii-appVersions.commands.relAppVerCommand'
-        )
+	........
+		'relAppVer' => array(
+		    'class' => 'common.lib.yii-appVersions.commands.relAppVerCommand'
+		)
 	)
 )
 ~~~
