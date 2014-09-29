@@ -131,7 +131,7 @@ class Versions extends CActiveRecord
 
     public static function encode($string) {
         $v = explode(".",$string);
-        if(!is_array($v)) {
+        if(!is_array($v) || count($v) != 3) {
             return null;
         }
         $version = intval($v[0]) * 1000000;
